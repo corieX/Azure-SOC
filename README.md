@@ -1,7 +1,7 @@
 # Azure-SOC
 
 <p align="center">
-![Azure SOC](Azure image.jpg)
+![Azure Cloud Image cover](Azure image.jpg)
 )
 
 </p>
