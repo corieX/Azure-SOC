@@ -1,6 +1,4 @@
 # Azure-SOC
 
-<p align="center">
-![Azure Cloud Image cover](AzureImage.jpg)
 
-</p>
+[![Azure Cloud Image cover][(https://raw.githubusercontent.com/corieX/Azure-SOC/main/AzureImage.jpg]
