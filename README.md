@@ -27,7 +27,14 @@ the purpose of this project was to construct a SOC environment within Azure. The
 ![Azure Image 2](Azure%20image2.jpg)
 
 # Azure Evironment Before Hardening / Security Controls
+![Azure Image 3](3.jpg)
 
-The intial phase of the project consisted of leaving the Azure encironment exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls left wide open, and all other components deployed with public endpoints visible to the Internet.
+The intial phase of the project consisted of leaving the Azure environment exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls left wide open, and all other components deployed with public endpoints visible to the Internet. The purpose of this was to attract threat actors and observe their begavioral patterns. I created a Windows virtual machine housed with SQL database, also  a Linux server with both their network security groups set to Allow All settings. This created an unsecured Azure environment with monitoring tool Microsoft Sentinel that used logs aggregated by Logs Analytics workspace.
+
+
+# Azure Evironment After Hardening / Security Controls
+![Azure Image 4](Azure%20image%20%283%29.jpg)
+
+During the Final phase of this project, it consisted of Network Security Groups were hardened by blocking inbound and outbound traffic with the exception of the created public IP addresses that are required access to the virtual machines, and all other resources were protected by their built-in firewalls also Private Endpoint.
 
 
