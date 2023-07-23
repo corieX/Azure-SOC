@@ -15,16 +15,19 @@ the purpose of this project was to construct a SOC environment within Azure. The
 
 # Azure Components Deployed
 
-Network Security Group (NSG)
-Virtual Machines (2 Windows, 1 Linux)
-Log Analytics Workspace Using (KQL)
-Azure Key Vault
-Azure Storage Account
-Microsoft Sentinel
-Microsoft Defender
-Visual Studio Code
+- Network Security Group (NSG)
+- Virtual Machines (2 Windows, 1 Linux)
+- Log Analytics Workspace Using (KQL)
+- Azure Key Vault
+- Azure Storage Account
+- Microsoft Sentinel
+- Microsoft Defender
+- Visual Studio Code
 
 ![Azure Image 2](Azure%20image2.jpg)
 
+# Azure Evironment Before Hardening / Security Controls
+
+The intial phase of the project consisted of leaving the Azure encironment exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls left wide open, and all other components deployed with public endpoints visible to the Internet.
 
 
