@@ -37,4 +37,12 @@ The intial phase of the project consisted of leaving the Azure environment expos
 
 During the Final phase of this project, it consisted of Network Security Groups were hardened by blocking inbound and outbound traffic with the exception of the created public IP addresses that are required access to the virtual machines, and all other resources were protected by their built-in firewalls also Private Endpoint.
 
+# Azure Maps Before Hardening / Security Control
+
+![Before NSG Malicious Allowed In](Before-nsg-malicious-allowed-in.PNG)
+![Before syslog SSH Auth Fail](Before-syslog-ssh-auth-fail.PNG)
+![Before Windows RDP SMB Auth Fail](Before-windows-rdp-smb-auth-fail.PNG)
+
+
+
 
