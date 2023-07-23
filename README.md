@@ -45,6 +45,18 @@ The attack map highlights the criticality of securing your infrastructure. With 
 ![Before syslog SSH Auth Fail](Before-syslog-ssh-auth-fail.PNG)
 ![Before Windows RDP SMB Auth Fail](Before-windows-rdp-smb-auth-fail.PNG)
 
+# Metrics Before Hardening / Security Controls
+
+In the insecure environment, we conducted a comprehensive measurement of key metrics over a 24-hour period, starting on June 19, 2023, at 11:27PM (EST) and ending on June 20, 2023, at 11:27PM (EST). 
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent            | 19217
+| Syslog                   | 6917
+| SecurityAlert            | 1
+| SecurityIncident         | 218
+| NSG Inbound Malicious Flows Allowed | 562
+
 
 
 
