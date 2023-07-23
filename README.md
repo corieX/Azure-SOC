@@ -57,6 +57,25 @@ In the insecure environment, we conducted a comprehensive measurement of key met
 | SecurityIncident         | 218
 | NSG Inbound Malicious Flows Allowed | 562
 
+# Metrics After Hardening / Security Controls
+
+In our environment, we diligently monitored crucial metrics for a continuous 24-hour period, commencing on July 3, 2023, at 3:47:01 PM (EST) and concluding on July 4, 2023, at 3:47:01 PM (EST). Notably, these measurements were taken after implementing robust security controls. By comparing the data with the previous results, we gain essential insights into the efficacy of our security measures and the overall state of information security. This analysis enables us to identify areas of improvement, validate the impact of security controls, and further fortify our systems against potential threats.
+
+| Metric                   | Count
+| ------------------------ | -----
+| SecurityEvent            | 437
+| Syslog                   | 323
+| SecurityAlert            | 0
+| SecurityIncident         | 0
+| NSG Inbound Malicious Flows Allowed | 0
+
+# Conclusion
+
+
+This project successfully built an Azure cloud infrastructure and employed Microsoft Sentinel for logging and incident generation based on watch lists. Before implementing security controls, baseline metrics were recorded in the unprotected environment. After fortifying the network with various security measures, a new set of measurements was taken.
+
+Comparing pre- and post-implementation metrics revealed a significant reduction in security events and incidents, validating the effectiveness of the security controls.
+
 
 
 
