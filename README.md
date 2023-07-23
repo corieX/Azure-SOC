@@ -39,6 +39,8 @@ During the Final phase of this project, it consisted of Network Security Groups 
 
 # Azure Maps Before Hardening / Security Control
 
+The attack map highlights the criticality of securing your infrastructure. With an open Network Security Group (NSG), malicious traffic flowed freely, emphasizing the need for robust security measures. Implementing restricted NSG rules helps prevent unauthorized access and minimizes potential threats, reinforcing the significance of information security.
+
 ![Before NSG Malicious Allowed In](Before-nsg-malicious-allowed-in.PNG)
 ![Before syslog SSH Auth Fail](Before-syslog-ssh-auth-fail.PNG)
 ![Before Windows RDP SMB Auth Fail](Before-windows-rdp-smb-auth-fail.PNG)
