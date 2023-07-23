@@ -11,4 +11,20 @@ the purpose of this project was to construct a SOC environment within Azure. The
 - Syslog (Linux Event Logs)
 - SecurityAlert (Log Analytics Alerts Triggered)
 - SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL 
+- AzureNetworkAnalytics_CL
+
+# Azure Components Deployed
+
+Network Security Group (NSG)
+Virtual Machines (2 Windows, 1 Linux)
+Log Analytics Workspace Using (KQL)
+Azure Key Vault
+Azure Storage Account
+Microsoft Sentinel
+Microsoft Defender
+Visual Studio Code
+
+![Azure Image 2](Azure%20image2.jpg)
+
+
+
