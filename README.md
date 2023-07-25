@@ -5,7 +5,17 @@
 
 ## Purpose and Objectives
 
-the purpose of this project was to construct a SOC environment within Azure. The objective was to capture and analyze logs from several sources, subsequently consolidated within a Log Analytics workspace. Microsoft Sentinel was impleented to analyze these logs by developing attack maps, creating alert triggers, and incident generation. Azure Sentinel measured the metrics of an insecure environment over a 24-hour period. Following this phase, security controls were implemented to fortify the virtual environment. Lastly, another 24-hour metric measurement phase was conducted and the results obtained from these endeavors are presented below. The metrics analyzed were:
+The main goal of this project was to build a Security Operations Center (SOC) environment in Azure. I aimed to collect and analyze logs from various sources, consolidating them in a Log Analytics workspace. This was achieved using Microsoft Sentinel, which helped develop attack maps, set alert triggers, and generate incident.
+
+In the first phase, Azure Sentinel measured the metrics of an insecure environment over a 24-hour period. Afterward, I implemented security controls to strengthen the virtual environment's security infrastructure. In the final phase, we conducted another 24-hour measurement to compare the results with the evironment being insure and with security controls in place.
+
+The metrics analyzed encompassed:
+
+- More than 9 security incidents within an 30 day-period.
+- Detection of anomalies in user activity.
+- Recommendations to enhance the security posture of the environment.
+
+Overall, these efforts allowed us to assess the impact of the implemented security controls and demonstrate the effectiveness of our SOC environment in detecting and responding to potential threats in real-time.
 
 - SecurityEvent (Windows Event Logs)
 - Syslog (Linux Event Logs)
