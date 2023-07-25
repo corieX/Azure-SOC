@@ -39,17 +39,29 @@ Overall, these efforts allowed us to assess the impact of the implemented securi
 # Azure Evironment Before Hardening / Security Controls
 ![Azure Image 3](3.jpg)
 
-The intial phase of the project consisted of leaving the Azure environment exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls left wide open, and all other components deployed with public endpoints visible to the Internet. The purpose of this was to attract threat actors and observe their begavioral patterns. I created a Windows virtual machine housed with SQL database, also  a Linux server with both their network security groups set to Allow All settings. This created an unsecured Azure environment with monitoring tool Microsoft Sentinel that used logs aggregated by Logs Analytics workspace.
+In the first phase of the project, I deliberately exposed the Azure environment to the internet. The Virtual Machines, along with their Network Security Groups and built-in firewalls, were intentionally left wide open, and all other components had public endpoints visible to the Internet. The goal was to attract potential threat actors and observe their actions and behavior.
+
+To achieve this, I set up a Windows virtual machine with a SQL database and a Linux server, both configured with Network Security Groups set to "Allow All" settings. This created an unsecured Azure environment that served as a honeypot for monitoring and analysis.
+
+To monitor the activities and gather insights, I utilized Microsoft Sentinel, a powerful tool that collected and analyzed logs from various sources, aggregated within a Logs Analytics workspace. This allowed for real-time observation of potential threats and helped gain valuable information about the tactics used by threat actors.
+
+By simulating an exposed environment and using advanced monitoring techniques, this gave me valuable insights into potential vulnerabilities and risks, which gave me experience on how to to enhance the security measures effectively and proactively protect the Azure infrastructure.
 
 
 # Azure Evironment After Hardening / Security Controls
 ![Azure Image 4](Azure%20image%20%283%29.jpg)
 
-During the Final phase of this project, it consisted of Network Security Groups were hardened by blocking inbound and outbound traffic with the exception of the created public IP addresses that are required access to the virtual machines, and all other resources were protected by their built-in firewalls also Private Endpoint.
+In the Final phase of this project, I focused on enhancing the security of the Azure environment, specifically the Network Security Groups (NSGs) and built-in firewalls.
+
+To bolster the security of the environment, I hardened the NSGs by implementing strict rules. By blocking both inbound and outbound traffic, except for specific public IP addresses that were necessary to access the virtual machines. This approach allowed more security to the resources more effectively, ensuring that only authorized entities could interact with them.
+
+Additionally, I made sure that all other resources within the environment were protected by their respective built-in firewalls, providing an added layer of defense. Private Endpoints were also utilized to further secure the resources, enabling private connections to specific Azure services without exposing them to the public internet.
+
+By implementing these security measures, this reduced the level of risk and enhanced the overall security of the Azure environment, making it more resilient against potential threats and unauthorized access.
 
 # Azure Maps Before Hardening / Security Control
 
-The attack map highlights the criticality of securing your infrastructure. With an open Network Security Group (NSG), malicious traffic flowed freely, emphasizing the need for robust security measures. Implementing restricted NSG rules helps prevent unauthorized access and minimizes potential threats, reinforcing the significance of information security.
+In my experience, the attack map demonstrated the utmost importance of securing our infrastructure. Witnessing how malicious traffic flowed freely due to an open Network Security Group (NSG) emphasized the necessity for robust security measures. Taking the initiative to implement restricted NSG rules, I learned firsthand how this action can prevent unauthorized access and greatly minimize potential threats. This experience reinforced my understanding of the significance of information security in protecting our valuable assets.
 
 ![Before NSG Malicious Allowed In](Before-nsg-malicious-allowed-in.PNG)
 ![Before syslog SSH Auth Fail](Before-syslog-ssh-auth-fail.PNG)
@@ -57,7 +69,7 @@ The attack map highlights the criticality of securing your infrastructure. With 
 
 # Metrics Before Hardening / Security Controls
 
-In the insecure environment, we conducted a comprehensive measurement of key metrics over a 24-hour period, starting on June 19, 2023, at 11:27PM (EST) and ending on June 20, 2023, at 11:27PM (EST). 
+In the insecure environment, I thoroughly measured essential metrics over a continuous 24-hour period. The measurement started on June 19, 2023, at 11:27 PM (EST) and concluded on June 20, 2023, at 11:27 PM (EST). By gathering and analyzing these metrics during this time frame, I gained valuable insights into potential vulnerabilities and risks concerning our information security. This analysis allowed me to identify areas of concern and develop targeted strategies to enhance the security of our environment effectively.
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -69,7 +81,9 @@ In the insecure environment, we conducted a comprehensive measurement of key met
 
 # Metrics After Hardening / Security Controls
 
-In our environment, we diligently monitored crucial metrics for a continuous 24-hour period, commencing on July 3, 2023, at 3:47:01 PM (EST) and concluding on July 4, 2023, at 3:47:01 PM (EST). Notably, these measurements were taken after implementing robust security controls. By comparing the data with the previous results, we gain essential insights into the efficacy of our security measures and the overall state of information security. This analysis enables us to identify areas of improvement, validate the impact of security controls, and further fortify our systems against potential threats.
+In the environment, I personally took the responsibility of diligently monitoring crucial metrics for a continuous 24-hour period. The monitoring commenced on July 3, 2023, at 3:47:01 PM (EST) and concluded on July 4, 2023, at 3:47:01 PM (EST). It's essential to note that these measurements were taken after I implemented robust security controls.
+
+By comparing this data with the previous results, I gained valuable insights into the effectiveness of our security measures and the overall state of our information security. This analysis enabled me to identify areas for improvement, validate the impact of the security controls, and further fortify our systems against potential threats. Taking these proactive steps, I continue to strengthen our ability to protect our environment and safeguard our valuable assets.
 
 | Metric                   | Count
 | ------------------------ | -----
